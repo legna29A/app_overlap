@@ -1,0 +1,3 @@
+Mejor ccp_alpha: 0.01495
+Recall final categoría 1 (Víctima): 0.9113
+Recall final categoría 0 (No Víctima): 0.2487

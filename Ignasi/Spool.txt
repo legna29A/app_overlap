@@ -1,0 +1,18 @@
+· Arreglar la codificación de la tabla 5 y posiblemente la 4, de modo que todo sea consistente (0 siempre es falso en booleanas, si es continua el menor valor es 0). Fijarse en país que podría estar al revés y en las ordinales.
+	· Se puede hacer un pre-procesado estético para unificar a estos efectos.
+· Comprobar que la variable Porno esté bien codificada.
+· Pasar ABUSOBS2 de continua a one hot encoding.
+	· Reducir la dimensión a 3 estados. Nunca + Anualmente, Monthly, Weekly, Daily. Mirar cuandos Monthly quedan a ver si se puede colapsar en otra (si son pocos adelante).
+		· Tener en mente que podemos probar el sistema sin este colapso a ver que resultados ofrece.
+	· Pasar la información de ABUSOBS1 a ABUSOBS2 para reducir missing values. Si e ABUSOBS1 dices que nunca bebes (o anualmente?) eso información se hereda a ABUSOBS2.
+· No es correcto pasarle dos binarias al sistema (e.g., Género y Orientación sexual). Comprobar que pasa con esto e intentar solucionarlo.
+· Aplastar las variables de convivencia para reducir dimensionalidad. Al final nos quedan 4 booleanas:
+	· Convivo con 0 progenitores.
+	· Convivo con 1 progenitor.
+	· Convivo con 2 progenitores.
+	· Convivo con hermanos.
+
+· Set seed para que el DTree y la DNN usen la misma partición de Nested Cross Validation y usar exactamente la misma para el ensemble.
+
+Siguiente reunión 25 de Marzo de 2026 a las 11:30
+-------------------------------------------------------------------------
