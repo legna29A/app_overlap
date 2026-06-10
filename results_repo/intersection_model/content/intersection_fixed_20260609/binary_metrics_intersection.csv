@@ -1,0 +1,2 @@
+﻿outcome,accuracy,balanced_accuracy,precision_ppv,recall_sensitivity,specificity,npv,f1_positive,TP,FP,TN,FN,support
+intersection,0.5944798301486199,0.6853638449320548,0.296,0.8314606741573034,0.5392670157068062,0.9321266968325792,0.43657817109144537,148,352,412,30,942
