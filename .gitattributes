@@ -1,0 +1,19 @@
+# Text/data files: keep LF for reproducibility
+*.csv text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+*.md text eol=lf
+*.ipynb text eol=lf
+*.py text eol=lf
+
+# Binary/model files
+*.h5 binary
+*.keras binary
+*.pkl binary
+*.joblib binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.docx binary
+*.xlsx binary
