@@ -1,0 +1,12 @@
+﻿outcome,definition,n,positives,prevalence_pct
+Victimization,≥1 victimization item,3767,1861,49.4
+Victimization,≥2 victimization items,3767,1188,31.5
+Victimization,≥3 victimization items,3767,839,22.3
+Perpetration,≥1 perpetration item,3767,885,23.5
+Perpetration,≥2 perpetration items,3767,374,9.9
+Perpetration,≥3 perpetration items,3767,181,4.8
+Victim–perpetrator overlap,V≥1 and P≥1,3767,713,18.9
+Victim–perpetrator overlap,V≥2 and P≥2,3767,276,7.3
+Victim–perpetrator overlap,V≥3 and P≥3,3767,134,3.6
+Victim–perpetrator overlap,V≥2 and P≥1,3767,562,14.9
+Victim–perpetrator overlap,V≥1 and P≥2,3767,328,8.7

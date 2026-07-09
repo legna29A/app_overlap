@@ -1,0 +1,9 @@
+﻿model,evaluated_prediction,alternative_outcome,definition,n,positives,negatives,prevalence_pct,recall_pct,specificity_pct,ppv_pct,npv_pct,balanced_accuracy_pct,f1_pct,accuracy_pct,TP,FP,TN,FN
+Victimization classifier,pred_victim final,Victimization ≥1 item(s),V.SUM.TOTAL ≥ 1,942,465,477,49.4,90.5,24.7,54.0,72.8,57.6,67.6,57.2,421,359,118,44
+Victimization classifier,pred_victim final,Victimization ≥2 item(s),V.SUM.TOTAL ≥ 2,942,318,624,33.8,91.8,21.8,37.4,84.0,56.8,53.2,45.4,292,488,136,26
+Victimization classifier,pred_victim final,Victimization ≥3 item(s),V.SUM.TOTAL ≥ 3,942,222,720,23.6,94.6,20.8,26.9,92.6,57.7,41.9,38.2,210,570,150,12
+Overlap classifier,pred_overlap final,Overlap V≥1 and P≥1,V.SUM.TOTAL ≥ 1 AND P.SUM.TOTAL ≥ 1,942,178,764,18.9,80.9,55.5,29.8,92.6,68.2,43.5,60.3,144,340,424,34
+Overlap classifier,pred_overlap final,Overlap V≥2 and P≥2,V.SUM.TOTAL ≥ 2 AND P.SUM.TOTAL ≥ 2,942,62,880,6.6,87.1,51.1,11.2,98.3,69.1,19.8,53.5,54,430,450,8
+Overlap classifier,pred_overlap final,Overlap V≥3 and P≥3,V.SUM.TOTAL ≥ 3 AND P.SUM.TOTAL ≥ 3,942,35,907,3.7,88.6,50.1,6.4,99.1,69.3,11.9,51.5,31,453,454,4
+Overlap classifier,pred_overlap final,Overlap V≥2 and P≥1,V.SUM.TOTAL ≥ 2 AND P.SUM.TOTAL ≥ 1,942,139,803,14.8,84.9,54.4,24.4,95.4,69.7,37.9,58.9,118,366,437,21
+Overlap classifier,pred_overlap final,Overlap V≥1 and P≥2,V.SUM.TOTAL ≥ 1 AND P.SUM.TOTAL ≥ 2,942,73,869,7.7,84.9,51.4,12.8,97.6,68.2,22.3,54.0,62,422,447,11
