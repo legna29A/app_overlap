@@ -1,0 +1,2 @@
+threshold,accuracy,balanced_accuracy,precision_ppv,recall_sensitivity,specificity,npv,f1_positive,TP,FP,TN,FN,support,positive_support,negative_support
+0.5,0.5870488322717622,0.6721645390905348,0.28857715430861725,0.8089887640449438,0.5353403141361257,0.9232505643340858,0.4254062038404726,144,355,409,34,942,178,764

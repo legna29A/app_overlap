@@ -1,0 +1,125 @@
+{
+  "random_state": 42,
+  "force_cpu_for_reproducibility": false,
+  "enable_strict_op_determinism": false,
+  "threshold": 0.5,
+  "pca_threshold": 0.99,
+  "n_components": 22,
+  "batch_size": 128,
+  "epochs": 80,
+  "patience": 6,
+  "learning_rate": 0.001,
+  "target_recall_pos": 0.9,
+  "min_recall_neg": 0.2,
+  "fallback_recall_pos": 0.85,
+  "base_pos_weight": 3.2545180722891565,
+  "pos_weight_multipliers": [
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "training_seeds": [
+    42
+  ],
+  "candidates": [
+    [
+      64,
+      "linear",
+      0.3,
+      4,
+      "relu",
+      0.1
+    ],
+    [
+      64,
+      "sigmoid",
+      0.3,
+      16,
+      "linear",
+      0.0
+    ],
+    [
+      64,
+      "linear",
+      0.2,
+      4,
+      "relu",
+      0.1
+    ],
+    [
+      64,
+      "linear",
+      0.3,
+      4,
+      "relu",
+      0.05
+    ],
+    [
+      64,
+      "relu",
+      0.3,
+      16,
+      "relu",
+      0.0
+    ],
+    [
+      64,
+      "relu",
+      0.3,
+      16,
+      "linear",
+      0.05
+    ]
+  ],
+  "selection_rule": {
+    "tier_3": "recall_1 >= 0.9 and recall_0 >= 0.2",
+    "tier_2": "recall_1 >= 0.85 and recall_0 >= 0.2",
+    "tier_1": "recall_1 >= 0.9",
+    "score": "(tier, recall_0, precision_ppv, balanced_accuracy, accuracy, recall_1)",
+    "threshold_fixed": 0.5,
+    "best_epoch_selected_by_same_screening_score": true
+  },
+  "best": {
+    "seed": 6192,
+    "pos_weight_multiplier": 1.5,
+    "u1": 64,
+    "a1": "relu",
+    "d1": 0.3,
+    "u2": 16,
+    "a2": "linear",
+    "d2": 0.05,
+    "threshold": 0.5,
+    "recall_0": 0.30097087378640774,
+    "recall_1": 0.9140271493212669,
+    "specificity": 0.30097087378640774,
+    "precision_ppv": 0.28611898016997167,
+    "npv": 0.9194915254237288,
+    "f1_positive": 0.43581445523193096,
+    "accuracy": 0.4447983014861996,
+    "balanced_accuracy": 0.6074990115538373,
+    "TP": 202,
+    "FP": 504,
+    "TN": 217,
+    "FN": 19,
+    "epochs_ran": 4,
+    "tier": 3,
+    "epochs_fit_total": 27,
+    "base_pos_weight": 3.2545180722891565,
+    "effective_pos_weight": 4.8817771084337345
+  },
+  "best_params": {
+    "u1": 64,
+    "a1": "relu",
+    "d1": 0.3,
+    "u2": 16,
+    "a2": "linear",
+    "d2": 0.05,
+    "seed": 6192,
+    "pos_weight_multiplier": 1.5,
+    "effective_pos_weight": 4.8817771084337345
+  }
+}
