@@ -1,0 +1,12 @@
+{
+  "outcome": "victim-perpetrator overlap / INTERSECT",
+  "model_type": "independent DNN overlap classifier",
+  "pca_threshold": 0.95,
+  "pca_scope": "train_only",
+  "threshold": 0.5,
+  "threshold_sweep_step": 0.001,
+  "random_state": 42,
+  "test_size": 0.25,
+  "stratification": "overlap target in this notebook; document joint four-category split if used externally",
+  "output_dir": "overlap_final/overlap_DNN_PCA_trainonly_TEST_PCA095_thr0p5_seed42"
+}
