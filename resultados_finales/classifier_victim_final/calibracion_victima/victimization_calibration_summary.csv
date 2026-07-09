@@ -1,0 +1,2 @@
+model,n_test,observed_prevalence_test,mean_predicted_score,brier_score,brier_baseline_prevalence_only,n_unique_scores
+Victimization,942,0.49363057324840764,0.4950117125779208,0.23982335117595846,0.24995943040285604,2

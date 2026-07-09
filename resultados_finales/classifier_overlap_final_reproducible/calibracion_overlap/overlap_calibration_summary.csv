@@ -1,0 +1,2 @@
+model,n,observed_prevalence,mean_predicted_score,min_score,max_score,unique_scores,brier_score,brier_baseline_prevalence_only,brier_improvement_vs_baseline,roc_auc,average_precision,n_negative,n_positive
+Victim–perpetrator overlap,942,0.18895966029723993,0.5116344282908705,0.337506,0.77434886,942,0.24311546339765872,0.15325390707759162,-0.08986155632006709,0.7489852344255545,0.38867133242240187,764,178

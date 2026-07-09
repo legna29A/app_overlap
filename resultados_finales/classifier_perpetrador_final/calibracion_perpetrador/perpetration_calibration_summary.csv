@@ -1,0 +1,2 @@
+model,n,prevalence_observed,mean_predicted_score,score_min,score_max,n_unique_scores,brier_score,brier_baseline_prevalence_only,roc_auc_score_ranking_only,average_precision_score_ranking_only
+Perpetration,942,0.2346072186836518,0.5300716717515924,0.4399148,0.68442285,942,0.25780728195591185,0.17956667162517298,0.6999705035113373,0.38956937074700776
