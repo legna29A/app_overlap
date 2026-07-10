@@ -27,3 +27,5 @@ __pycache__/
 
 # Ignore virtualenvs inside results
 results_repo/**/.venv/
+results_repo/intersection_model/Version_Final/final_repeated_cv_screening_operating_point_PCA_trainonly/inner_threshold_selection_tables_all_outcomes.csv
+results_repo/intersection_model/Version_Final/final_repeated_cv_screening_operating_point_PCA_trainonly/inner_threshold_selection_tables*.csv

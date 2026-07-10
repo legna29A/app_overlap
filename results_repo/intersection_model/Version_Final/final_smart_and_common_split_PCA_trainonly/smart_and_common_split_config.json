@@ -1,0 +1,38 @@
+{
+  "random_state": 42,
+  "test_size": 0.25,
+  "split": "common 75/25 split stratified by four-category victimization/perpetration role profile",
+  "outcome_definitions": {
+    "victimization": "V.SUM.TOTAL >= 1",
+    "perpetration": "P.SUM.TOTAL >= 1",
+    "overlap": "V.SUM.TOTAL >= 1 AND P.SUM.TOTAL >= 1"
+  },
+  "pca": {
+    "fit": "training partition only",
+    "use_fixed_final_components": true,
+    "fixed_n_components": {
+      "victimization": 18,
+      "perpetration": 22,
+      "overlap": 18
+    },
+    "variance_threshold": 0.95,
+    "victimization_retained_variance_percent": 92.62022188368312,
+    "perpetration_retained_variance_percent": 97.51264045511901,
+    "overlap_retained_variance_percent": 92.62022188368312
+  },
+  "models": {
+    "victimization_role": "cost-complexity pruned decision tree, ccp_alpha selected by inner validation within common training set",
+    "perpetration_role": "compact feed-forward neural network with class weights and early stopping on validation recall",
+    "direct_overlap": "weighted logistic regression SW_pos1.5",
+    "smart_and": "positive only when both role-specific predictions are positive"
+  },
+  "thresholds": {
+    "victim_default": 0.5,
+    "perp_default": 0.5,
+    "direct_overlap": 0.5,
+    "smart_and_recall_matched_victim": 0.05,
+    "smart_and_recall_matched_perp": 0.395,
+    "smart_and_selection_note": "Selected Smart AND threshold pair with recall >= direct-overlap recall and best false-positive control."
+  },
+  "interpretation_note": "Supplementary strategy-level common-split benchmark; not the direct combination of separately optimized saved final classifiers."
+}

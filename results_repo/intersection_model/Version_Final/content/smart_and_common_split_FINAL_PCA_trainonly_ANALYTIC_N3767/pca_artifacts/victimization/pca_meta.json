@@ -1,0 +1,8 @@
+{
+  "prefix": "victimization",
+  "pca_threshold": 0.95,
+  "n_input_features": 27,
+  "n_components_retained": 18,
+  "retained_variance": 0.9505009259538393,
+  "pca_dir": "content/smart_and_common_split_FINAL_PCA_trainonly_ANALYTIC_N3767/pca_artifacts/victimization"
+}

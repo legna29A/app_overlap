@@ -1,0 +1,111 @@
+{
+  "purpose": "Strategy-level benchmark: direct overlap classifier vs Smart AND conjunctive rule",
+  "important_interpretation": "This benchmark uses a common train/test split and should be interpreted as a comparison of detection strategies, not as the direct combination of the separately optimized final saved classifiers.",
+  "data_files": {
+    "features_file": "data/lista_global_vars.csv",
+    "target_file": "data/target_col.csv"
+  },
+  "analytical_sample_n": 3767,
+  "test_n": 942,
+  "validation_expected_n": {
+    "analytical_n": 3767,
+    "test_n": 942
+  },
+  "random_state": 42,
+  "test_size": 0.25,
+  "stratification": "joint four-category role profile: victimization x perpetration",
+  "outcome_definitions": {
+    "victimization": "V.SUM.TOTAL >= 1",
+    "perpetration": "P.SUM.TOTAL >= 1",
+    "overlap": "V.SUM.TOTAL >= 1 AND P.SUM.TOTAL >= 1"
+  },
+  "pca": {
+    "scope": "train-only",
+    "threshold": 0.95,
+    "victimization": {
+      "prefix": "victimization",
+      "pca_threshold": 0.95,
+      "n_input_features": 27,
+      "n_components_retained": 18,
+      "retained_variance": 0.9505009259538393,
+      "pca_dir": "content/smart_and_common_split_FINAL_PCA_trainonly_ANALYTIC_N3767/pca_artifacts/victimization"
+    },
+    "perpetration": {
+      "prefix": "perpetration",
+      "pca_threshold": 0.95,
+      "n_input_features": 27,
+      "n_components_retained": 18,
+      "retained_variance": 0.9505009259538393,
+      "pca_dir": "content/smart_and_common_split_FINAL_PCA_trainonly_ANALYTIC_N3767/pca_artifacts/perpetration"
+    },
+    "direct_overlap": {
+      "prefix": "direct_overlap",
+      "pca_threshold": 0.95,
+      "n_input_features": 27,
+      "n_components_retained": 18,
+      "retained_variance": 0.9505009259538393,
+      "pca_dir": "content/smart_and_common_split_FINAL_PCA_trainonly_ANALYTIC_N3767/pca_artifacts/direct_overlap"
+    }
+  },
+  "models": {
+    "victimization": {
+      "algorithm": "cost-complexity pruned decision tree",
+      "threshold": 0.5,
+      "selection_note": "No candidate reached recall >= 0.85; selected highest recall/balance.",
+      "selected_tree": {
+        "strategy": "victim_tree_candidate",
+        "n": 942,
+        "positives": 465,
+        "negatives": 477,
+        "TP": 347,
+        "FP": 287,
+        "TN": 190,
+        "FN": 118,
+        "recall_sensitivity": 0.7462365591397849,
+        "specificity": 0.39832285115303984,
+        "precision_ppv": 0.5473186119873817,
+        "npv": 0.6168831168831169,
+        "balanced_accuracy": 0.5722797051464124,
+        "f1_positive": 0.6314831665150137,
+        "accuracy": 0.5700636942675159,
+        "fpr": 0.6016771488469602,
+        "fnr": 0.2537634408602151,
+        "auc_pr": 0.5764017393405033,
+        "auc_roc": 0.6116160591510561,
+        "ccp_alpha": 0.010415004024879937,
+        "depth": 2,
+        "n_leaves": 3
+      }
+    },
+    "perpetration": {
+      "algorithm": "DNN",
+      "threshold": 0.5,
+      "meta": {
+        "model_type": "DNN",
+        "positive_weight": 3.2545180722891565,
+        "epochs_ran": 45
+      }
+    },
+    "direct_overlap": {
+      "algorithm": "LogisticRegression_SW_pos1.5",
+      "threshold": 0.5,
+      "meta": {
+        "model_type": "LogisticRegression_SW_pos1.5",
+        "positive_weight": 6.420560747663551
+      }
+    },
+    "smart_and": {
+      "default_rule": "victim >= 0.5 AND perpetration >= 0.5",
+      "recall_matched_rule": "victim >= 0.01 AND perpetration >= 0.43",
+      "selection_note": "Smart AND threshold pair selected among candidates with recall >= direct-overlap recall."
+    }
+  },
+  "outputs": {
+    "strategy_benchmark_raw": "content/smart_and_common_split_FINAL_PCA_trainonly_ANALYTIC_N3767/strategy_benchmark_common_split_raw.csv",
+    "strategy_benchmark_percent": "content/smart_and_common_split_FINAL_PCA_trainonly_ANALYTIC_N3767/strategy_benchmark_common_split_percent.csv",
+    "report_table_raw": "content/smart_and_common_split_FINAL_PCA_trainonly_ANALYTIC_N3767/table_S_smart_and_common_split_raw.csv",
+    "report_table_percent": "content/smart_and_common_split_FINAL_PCA_trainonly_ANALYTIC_N3767/table_S_smart_and_common_split_percent.csv",
+    "row_level_predictions": "content/smart_and_common_split_FINAL_PCA_trainonly_ANALYTIC_N3767/predictions_common_split_all_strategies.csv",
+    "threshold_grid": "content/smart_and_common_split_FINAL_PCA_trainonly_ANALYTIC_N3767/smart_and_threshold_grid_raw.csv"
+  }
+}

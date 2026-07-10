@@ -1,0 +1,6 @@
+strategy,model,threshold_type,victim_threshold,perp_threshold,overlap_threshold,label,n,positive_support,negative_support,TP,FP,TN,FN,recall_sensitivity,specificity,precision_ppv,npv,balanced_accuracy,f1_positive,accuracy,average_precision_pr_auc,roc_auc
+Victimization role classifier,Cost-complexity pruned decision tree,role model,0.5,,,victimization_role,1006,503,503,266,162,341,237,52.9%,67.8%,62.1%,59.0%,60.3%,57.1%,60.3%,56.4%,60.3%
+Perpetration role classifier,Compact feed-forward neural network,role model,,0.5,,perpetration_role,1006,237,769,144,266,503,93,60.8%,65.4%,35.1%,84.4%,63.1%,44.5%,64.3%,37.0%,68.3%
+Direct overlap classifier,Weighted logistic regression SW_pos1.5,direct overlap threshold,,,0.5,direct_overlap,1006,193,813,152,373,440,41,78.8%,54.1%,29.0%,91.5%,66.4%,42.3%,58.8%,38.3%,73.4%
+Smart AND default,Victimization prediction AND perpetration prediction,default role thresholds,0.5,0.5,,smart_and_default,1006,193,813,92,171,642,101,47.7%,79.0%,35.0%,86.4%,63.3%,40.4%,73.0%,32.7%,69.4%
+Smart AND recall-matched benchmark,Victimization prediction AND perpetration prediction,recall-matched benchmark thresholds,0.05,0.395,,smart_and_recall_matched,1006,193,813,155,433,380,38,80.3%,46.7%,26.4%,90.9%,63.5%,39.7%,53.2%,32.7%,69.4%

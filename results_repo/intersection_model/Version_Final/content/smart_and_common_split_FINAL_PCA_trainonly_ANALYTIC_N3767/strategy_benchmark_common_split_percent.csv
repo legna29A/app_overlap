@@ -1,0 +1,4 @@
+strategy,victim_threshold,perp_threshold,n,positives,negatives,TP,FP,TN,FN,recall_sensitivity,specificity,precision_ppv,npv,balanced_accuracy,f1_positive,accuracy,fpr,fnr,auc_pr,auc_roc,benchmark_note
+"Direct overlap classifier — LogisticRegression_SW_pos1.5, threshold=0.50",,,942,178,764,139,337,427,39,78.1,55.9,29.2,91.6,67.0,42.5,60.1,44.1,21.9,40.3,74.8,Direct overlap model trained on the dual-role target under the common split.
+Smart AND default — victim≥0.50 AND perp≥0.50,,,942,178,764,106,225,539,72,59.6,70.5,32.0,88.2,65.1,41.7,68.5,29.5,40.4,40.0,72.1,Conjunctive rule using role-specific default thresholds.
+Smart AND recall-matched — victim≥0.01 AND perp≥0.43,0.01,0.43,942,178,764,142,357,407,36,79.8,53.3,28.5,91.9,66.5,41.9,58.3,46.7,20.2,40.0,72.1,Smart AND threshold pair selected among candidates with recall >= direct-overlap recall.

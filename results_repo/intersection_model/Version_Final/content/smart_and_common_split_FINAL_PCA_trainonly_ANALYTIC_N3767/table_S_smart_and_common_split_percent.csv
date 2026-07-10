@@ -1,0 +1,3 @@
+strategy,TP,FP,TN,FN,recall_sensitivity,specificity,precision_ppv,npv,balanced_accuracy,f1_positive,accuracy,victim_threshold,perp_threshold,benchmark_note
+"Direct overlap classifier — LogisticRegression_SW_pos1.5, threshold=0.50",139,337,427,39,78.1,55.9,29.2,91.6,67.0,42.5,60.1,,,Direct overlap model trained on the dual-role target under the common split.
+Smart AND recall-matched — victim≥0.01 AND perp≥0.43,142,357,407,36,79.8,53.3,28.5,91.9,66.5,41.9,58.3,0.01,0.43,Smart AND threshold pair selected among candidates with recall >= direct-overlap recall.
