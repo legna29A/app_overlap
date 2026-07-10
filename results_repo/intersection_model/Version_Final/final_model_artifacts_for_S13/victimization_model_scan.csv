@@ -1,0 +1,24 @@
+object_name,type,input_used,n_req,classes,TP,FP,TN,FN,recall,specificity,ppv,npv,balanced_accuracy,f1,accuracy,roc_auc,pr_auc,error,total_diff
+best_model,DecisionTreeClassifier,pca_first_18,18.0,[0 1],71.0,32.0,445.0,394.0,0.15268817204301074,0.9329140461215933,0.6893203883495146,0.5303933253873659,0.5428011090823021,0.24999999999999997,0.5477707006369427,0.543233921687969,0.5275188625862174,,1.3894247649962805
+best_model,DecisionTreeClassifier,pca_first_18_INVERTED,18.0,[0 1],394.0,445.0,32.0,71.0,0.8473118279569892,0.06708595387840671,0.4696066746126341,0.3106796116504854,0.45719889091769794,0.6042944785276074,0.45222929936305734,0.4567660783120308,0.4728211037352006,,0.4004033272469061
+best_model,DecisionTreeClassifier,pca_full,18.0,[0 1],,,,,,,,,,,,,,"X has 27 features, but DecisionTreeClassifier is expecting 18 features as input.",
+best_model,DecisionTreeClassifier,scaled_raw_features,18.0,[0 1],,,,,,,,,,,,,,"X has 27 features, but DecisionTreeClassifier is expecting 18 features as input.",
+best_model,DecisionTreeClassifier,raw_features,18.0,[0 1],,,,,,,,,,,,,,"X has 27 features, but DecisionTreeClassifier is expecting 18 features as input.",
+pruned_clf,DecisionTreeClassifier,pca_first_18,18.0,[0 1],71.0,32.0,445.0,394.0,0.15268817204301074,0.9329140461215933,0.6893203883495146,0.5303933253873659,0.5428011090823021,0.24999999999999997,0.5477707006369427,0.543233921687969,0.5275188625862174,,1.3894247649962805
+pruned_clf,DecisionTreeClassifier,pca_first_18_INVERTED,18.0,[0 1],394.0,445.0,32.0,71.0,0.8473118279569892,0.06708595387840671,0.4696066746126341,0.3106796116504854,0.45719889091769794,0.6042944785276074,0.45222929936305734,0.4567660783120308,0.4728211037352006,,0.4004033272469061
+pruned_clf,DecisionTreeClassifier,pca_full,18.0,[0 1],,,,,,,,,,,,,,"X has 27 features, but DecisionTreeClassifier is expecting 18 features as input.",
+pruned_clf,DecisionTreeClassifier,scaled_raw_features,18.0,[0 1],,,,,,,,,,,,,,"X has 27 features, but DecisionTreeClassifier is expecting 18 features as input.",
+pruned_clf,DecisionTreeClassifier,raw_features,18.0,[0 1],,,,,,,,,,,,,,"X has 27 features, but DecisionTreeClassifier is expecting 18 features as input.",
+selected_tree,DecisionTreeClassifier,pca_first_18,18.0,[0 1],71.0,32.0,445.0,394.0,0.15268817204301074,0.9329140461215933,0.6893203883495146,0.5303933253873659,0.5428011090823021,0.24999999999999997,0.5477707006369427,0.543233921687969,0.5275188625862174,,1.3894247649962805
+selected_tree,DecisionTreeClassifier,pca_first_18_INVERTED,18.0,[0 1],394.0,445.0,32.0,71.0,0.8473118279569892,0.06708595387840671,0.4696066746126341,0.3106796116504854,0.45719889091769794,0.6042944785276074,0.45222929936305734,0.4567660783120308,0.4728211037352006,,0.4004033272469061
+selected_tree,DecisionTreeClassifier,pca_full,18.0,[0 1],,,,,,,,,,,,,,"X has 27 features, but DecisionTreeClassifier is expecting 18 features as input.",
+selected_tree,DecisionTreeClassifier,scaled_raw_features,18.0,[0 1],,,,,,,,,,,,,,"X has 27 features, but DecisionTreeClassifier is expecting 18 features as input.",
+selected_tree,DecisionTreeClassifier,raw_features,18.0,[0 1],,,,,,,,,,,,,,"X has 27 features, but DecisionTreeClassifier is expecting 18 features as input.",
+model,HistGradientBoostingClassifier,pca_full,,,,,,,,,,,,,,,,This HistGradientBoostingClassifier instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.,
+model,HistGradientBoostingClassifier,scaled_raw_features,,,,,,,,,,,,,,,,This HistGradientBoostingClassifier instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.,
+model,HistGradientBoostingClassifier,raw_features,,,,,,,,,,,,,,,,This HistGradientBoostingClassifier instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.,
+model_to_export,DecisionTreeClassifier,pca_first_18,18.0,[0 1],71.0,32.0,445.0,394.0,0.15268817204301074,0.9329140461215933,0.6893203883495146,0.5303933253873659,0.5428011090823021,0.24999999999999997,0.5477707006369427,0.543233921687969,0.5275188625862174,,1.3894247649962805
+model_to_export,DecisionTreeClassifier,pca_first_18_INVERTED,18.0,[0 1],394.0,445.0,32.0,71.0,0.8473118279569892,0.06708595387840671,0.4696066746126341,0.3106796116504854,0.45719889091769794,0.6042944785276074,0.45222929936305734,0.4567660783120308,0.4728211037352006,,0.4004033272469061
+model_to_export,DecisionTreeClassifier,pca_full,18.0,[0 1],,,,,,,,,,,,,,"X has 27 features, but DecisionTreeClassifier is expecting 18 features as input.",
+model_to_export,DecisionTreeClassifier,scaled_raw_features,18.0,[0 1],,,,,,,,,,,,,,"X has 27 features, but DecisionTreeClassifier is expecting 18 features as input.",
+model_to_export,DecisionTreeClassifier,raw_features,18.0,[0 1],,,,,,,,,,,,,,"X has 27 features, but DecisionTreeClassifier is expecting 18 features as input.",

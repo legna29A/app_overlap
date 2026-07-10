@@ -1,0 +1,13 @@
+object_name,type,input_used,threshold,n_req,classes,TP,FP,TN,FN,recall,specificity,ppv,npv,balanced_accuracy,accuracy,roc_auc,pr_auc,diff,error
+final_model,LogisticRegression,centered_pca_first_18,0.5,18,[0 1],149.0,391.0,373.0,29.0,0.8370786516853933,0.4882198952879581,0.2759259259259259,0.927860696517413,0.6626492734866757,0.554140127388535,0.7536252132478382,0.4335309108027502,82.0,
+final_model,LogisticRegression,centered_pca_first_18_BEST_THRESHOLD,0.5231636363636364,18,[0 1],144.0,355.0,409.0,34.0,0.8089887640449438,0.5353403141361257,0.28857715430861725,0.9232505643340858,0.6721645390905348,0.5870488322717622,0.7536252132478382,0.4335309108027502,0.0,
+final_model,LogisticRegression,centered_pca_full,,18,[0 1],,,,,,,,,,,,,,"X has 27 features, but LogisticRegression is expecting 18 features as input."
+final_model,LogisticRegression,centered_scaled_raw,,18,[0 1],,,,,,,,,,,,,,"X has 27 features, but LogisticRegression is expecting 18 features as input."
+final_model,LogisticRegression,scaled_raw,,18,[0 1],,,,,,,,,,,,,,"X has 27 features, but LogisticRegression is expecting 18 features as input."
+final_model,LogisticRegression,raw,,18,[0 1],,,,,,,,,,,,,,"X has 27 features, but LogisticRegression is expecting 18 features as input."
+model_to_export,LogisticRegression,centered_pca_first_18,0.5,18,[0 1],149.0,391.0,373.0,29.0,0.8370786516853933,0.4882198952879581,0.2759259259259259,0.927860696517413,0.6626492734866757,0.554140127388535,0.7536252132478382,0.4335309108027502,82.0,
+model_to_export,LogisticRegression,centered_pca_first_18_BEST_THRESHOLD,0.5231636363636364,18,[0 1],144.0,355.0,409.0,34.0,0.8089887640449438,0.5353403141361257,0.28857715430861725,0.9232505643340858,0.6721645390905348,0.5870488322717622,0.7536252132478382,0.4335309108027502,0.0,
+model_to_export,LogisticRegression,centered_pca_full,,18,[0 1],,,,,,,,,,,,,,"X has 27 features, but LogisticRegression is expecting 18 features as input."
+model_to_export,LogisticRegression,centered_scaled_raw,,18,[0 1],,,,,,,,,,,,,,"X has 27 features, but LogisticRegression is expecting 18 features as input."
+model_to_export,LogisticRegression,scaled_raw,,18,[0 1],,,,,,,,,,,,,,"X has 27 features, but LogisticRegression is expecting 18 features as input."
+model_to_export,LogisticRegression,raw,,18,[0 1],,,,,,,,,,,,,,"X has 27 features, but LogisticRegression is expecting 18 features as input."
